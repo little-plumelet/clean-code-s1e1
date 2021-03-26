@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.wrapper {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -34,17 +34,20 @@ body {
 .todo-content__add-item {
   display: flex;
 }
-ul {
+.incomplete-tasks,
+.complited-task {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+.title {
   list-style:none;
 }
 input,button{
   outline:none;
 }
-button {
+.button-edit,
+.button-delete,
+.button-add {
   background: none;
   border: 0px;
   color: #888;
@@ -53,7 +56,8 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.button-edit:hover,
+.button-add:hover {
   color: #3a3A3a;
 }
 /* Heading */
