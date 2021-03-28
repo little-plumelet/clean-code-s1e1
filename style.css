@@ -28,7 +28,10 @@
   margin: 0 auto 0;
 }
 .task-addition__input,
-.complited-task__input {
+.complited-task__input,
+.incomplete-tasks__input,
+.incomplete-tasks__label,
+.completed-tasks__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1
@@ -37,7 +40,7 @@
   display: flex;
 }
 .incomplete-tasks,
-.complited-task {
+.completed-tasks {
   margin: 0;
   padding: 0px;
 }
