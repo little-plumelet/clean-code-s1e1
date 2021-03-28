@@ -28,7 +28,7 @@
   margin: 0 auto 0;
 }
 .task-addition__input,
-.complited-task__input,
+.completed-task__input,
 .incomplete-tasks__input,
 .incomplete-tasks__label,
 .completed-tasks__label {
@@ -103,7 +103,7 @@
 }
 
 /* Task list */
-li {
+.incomplete-tasks__item, .completed-tasks__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -115,19 +115,20 @@ li > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.incomplete-tasks__checkbox, .completed-tasks__checkbox {
   margin: 0 10px;
 }
-li > label {
+.incomplete-tasks__label, .completed-tasks__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+/*two useless rules after this comment*/
+.completed-task__input, .incomplete-tasks__input, .task-addition__input {
   width: 226px
 }
-li > button.delete:hover {
+.button.delete:hover {
   color: #cf2323;
 }
 .button-delete img {
@@ -140,21 +141,21 @@ li > button.delete:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+.completed-tasks__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+.incomplete-tasks__input, .completed-tasks__input {
   display: none;
 }
 
-ul li.edit-mode input[type="text"] {
+.edit-mode > .incomplete-tasks__input {
   display: inline-block;
   width: 224px
 }
 
-ul li.edit-mode label {
+.edit-mode > .incomplete-tasks__label {
   display: none;
 }
