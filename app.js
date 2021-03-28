@@ -38,7 +38,7 @@ var createNewTaskElement=function(taskString){
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
-    editInput.className="task";
+    editInput.className="incomplete-tasks__input";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="button-edit";
@@ -121,6 +121,10 @@ var taskCompleted=function(){
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    var inputItem = listItem.childNodes;
+    console.log(inputItem[5]);
+    inputItem[5].classList.remove("incomplete-tasks__input");
+    inputItem[5].classList.add("completed-tasks__input");
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
@@ -133,6 +137,9 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    var inputItem = listItem.childNodes;
+    inputItem[5].classList.remove("completed-tasks__input");
+    inputItem[5].classList.add("incomplete-tasks__inpu");
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }
