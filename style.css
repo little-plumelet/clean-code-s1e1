@@ -34,7 +34,7 @@
 .completed-tasks__label {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .task-addition {
   display: flex;
@@ -136,7 +136,7 @@
 .completed-task__input, 
 .incomplete-tasks__input, 
 .task-addition__input {
-  width: 226px
+  width: 226px;
 }
 .button.delete:hover {
   color: #cf2323;
@@ -164,7 +164,7 @@
 
 .edit-mode > .incomplete-tasks__input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .edit-mode > .incomplete-tasks__label {
