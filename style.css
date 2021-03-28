@@ -27,7 +27,8 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.task-addition__input,
+.complited-task__inputgit {
   width: 56%;
   display: inline-block;
   flex-grow: 1
@@ -95,7 +96,7 @@ label[for="new-task"] {
 #new-task {
   width: 318px;
 }
-p > button:hover {
+.button-add:hover {
   color: #0fc57c;
 }
 
