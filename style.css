@@ -43,10 +43,6 @@
 .title {
   list-style: none;
 }
-input,
-button{
-  outline: none;
-}
 .button-edit,
 .button-delete,
 .button-add {
@@ -57,6 +53,7 @@ button{
   width: 60px;
   font-family: Lato, sans-serif;
   cursor: pointer;
+  outline: none;
 }
 .button-edit:hover,
 .button-add:hover {
@@ -84,6 +81,7 @@ label[for="new-task"] {
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
+  outline: none;
 }
 .incomplete-tasks__input, .completed-tasks__input, .task-addition__input {
   color: #333;
