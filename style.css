@@ -73,7 +73,9 @@
   margin: 0;
   text-transform: uppercase;
 }
-.incomplete-tasks__input, .completed-tasks__input, .task-addition__input {
+.incomplete-tasks__input, 
+.completed-tasks__input, 
+.task-addition__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -86,7 +88,9 @@
   color: #888;
   outline: none;
 }
-.incomplete-tasks__input:focus, .completed-tasks__input:focus, .task-addition__input:focus {
+.incomplete-tasks__input:focus, 
+.completed-tasks__input:focus, 
+.task-addition__input:focus {
   color: #333;
 }
 
@@ -103,7 +107,8 @@
 }
 
 /* Task list */
-.incomplete-tasks__item, .completed-tasks__item {
+.incomplete-tasks__item, 
+.completed-tasks__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -111,21 +116,26 @@
   justify-content: space-between;
   align-items: center;
 }
-.incomplete-tasks__item, .completed-tasks__item {
+.incomplete-tasks__item, 
+.completed-tasks__item {
   vertical-align: middle;
 }
 
-.incomplete-tasks__checkbox, .completed-tasks__checkbox {
+.incomplete-tasks__checkbox, 
+.completed-tasks__checkbox {
   margin: 0 10px;
 }
-.incomplete-tasks__label, .completed-tasks__label {
+.incomplete-tasks__label, 
+.completed-tasks__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 /*two useless rules after this comment*/
-.completed-task__input, .incomplete-tasks__input, .task-addition__input {
+.completed-task__input, 
+.incomplete-tasks__input, 
+.task-addition__input {
   width: 226px
 }
 .button.delete:hover {
@@ -147,7 +157,8 @@
 }
 
 /* Edit Task */
-.incomplete-tasks__input, .completed-tasks__input {
+.incomplete-tasks__input, 
+.completed-tasks__input {
   display: none;
 }
 
