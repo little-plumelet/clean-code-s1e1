@@ -86,7 +86,7 @@
   color: #888;
   outline: none;
 }
-.incomplete-tasks__input, .completed-tasks__input, .task-addition__input {
+.incomplete-tasks__input:focus, .completed-tasks__input:focus, .task-addition__input:focus {
   color: #333;
 }
 
