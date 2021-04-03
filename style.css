@@ -164,11 +164,13 @@
   display: none;
 }
 
-.incomplete-tasks__item_edit-mode > .incomplete-tasks__input {
+.incomplete-tasks__item_edit-mode > .incomplete-tasks__input,
+.completed-tasks__item_edit-mode > .completed-tasks__input {
   display: inline-block;
-  width: 224px;
+  width: 347px;
 }
 
-.incomplete-tasks__item_edit-mode > .incomplete-tasks__label {
+.incomplete-tasks__item_edit-mode > .incomplete-tasks__label,
+.completed-tasks__item_edit-mode > .completed-tasks__label {
   display: none;
 }
