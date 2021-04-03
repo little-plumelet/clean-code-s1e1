@@ -162,11 +162,11 @@
   display: none;
 }
 
-.edit-mode > .incomplete-tasks__input {
+.incomplete-tasks__item_edit-mode > .incomplete-tasks__input {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode > .incomplete-tasks__label {
+.incomplete-tasks__item_edit-mode > .incomplete-tasks__label {
   display: none;
 }

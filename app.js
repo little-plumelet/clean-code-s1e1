@@ -85,7 +85,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".button-edit");
-    var containsClass=listItem.classList.contains("edit-mode");
+    var containsClass=listItem.classList.contains("incomplete-tasks__item_edit-mode");
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -99,7 +99,7 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("edit-mode");
+    listItem.classList.toggle("incomplete-tasks__item_edit-mode");
 };
 
 
@@ -139,7 +139,7 @@ var taskIncomplete=function(){
     var listItem=this.parentNode;
     var inputItem = listItem.childNodes;
     inputItem[5].classList.remove("completed-tasks__input");
-    inputItem[5].classList.add("incomplete-tasks__inpu");
+    inputItem[5].classList.add("incomplete-tasks__input");
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }
