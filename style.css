@@ -17,7 +17,6 @@
 .matrix__more-info {
   font-family: fantasy, cursive;
 }
-
 @media (max-width:768px) {
   .matrix {
     text-align: center;
@@ -65,6 +64,7 @@
 .button-add:hover {
   color: #3a3A3a;
 }
+
 /* Heading */
 .title {
   color: #333;
@@ -122,7 +122,6 @@
 .completed-tasks__item {
   vertical-align: middle;
 }
-
 .incomplete-tasks__checkbox, 
 .completed-tasks__checkbox {
   margin: 0 10px;
@@ -134,6 +133,7 @@
   font-size: 18px;
   width: 226px;
 }
+
 /*two useless rules after this comment*/
 .completed-task__input, 
 .incomplete-tasks__input, 
@@ -163,13 +163,11 @@
 .completed-tasks__input {
   display: none;
 }
-
 .incomplete-tasks__item_edit-mode > .incomplete-tasks__input,
 .completed-tasks__item_edit-mode > .completed-tasks__input {
   display: inline-block;
   width: 347px;
 }
-
 .incomplete-tasks__item_edit-mode > .incomplete-tasks__label,
 .completed-tasks__item_edit-mode > .completed-tasks__label {
   display: none;
